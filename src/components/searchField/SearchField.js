@@ -35,8 +35,9 @@ function SeacrhField() {
           onChange={handleChange}
           type="text"
           name="image"
+          value={image}
           className="input__field"
-          placeholder="search for an image"
+          placeholder="Search for a user"
         />
         <button onSubmit={handleSubmit} type="submit">
           Search
