@@ -6,24 +6,24 @@ function SeacrhField() {
   const [image, setImage] = useState("");
   const [result, setResult] = useState([]);
 
-  const accesskey =
-    "aa2f3c3be8125f1fc86e3007153420c4e446c19b7b0c6d80a6257b281c9a0dc5";
+  const accesskey = `hV32rTvyumuVXBlHIJ4SchuzraqM1pjx8oWjab8bIF8`;
 
   const handleChange = (e) => {
     setImage(e.target.value);
   };
 
   const handleSubmit = () => {
-    const url =
-      "https://api.unsplash.com/search/photos?page=1&query=" +
-      image +
-      "&client_id=" +
-      accesskey;
+    const url = `https://api.unsplash.com/search/photos?page=1&query=${image}&orientation=squarish&client_id=${accesskey}`;
 
-    axios.get(url).then((res) => {
-      setResult(res.data.results);
-      console.log(res.data.results);
-    });
+    axios
+      .get(url)
+      .then((res) => {
+        setResult(res.data.results);
+        console.log(res.data.results);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
   return (
     <div className="search__body">
