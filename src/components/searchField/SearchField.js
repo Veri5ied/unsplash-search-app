@@ -22,6 +22,7 @@ function SeacrhField() {
 
     axios.get(url).then((res) => {
       setResult(res.data.results);
+      console.log(res.data.results);
     });
   };
   return (
