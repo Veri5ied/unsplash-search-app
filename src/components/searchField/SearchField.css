@@ -1,0 +1,65 @@
+.search__heading > h1 {
+  font-size: 42px;
+}
+
+.search__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.search__input {
+  padding: 10px 20px;
+}
+
+.search__input > input {
+  width: 300px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  border: none;
+}
+
+button {
+  width: 300px;
+  color: rgba(255, 255, 255, 0.705);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  color: #fff;
+}
+
+.card_list {
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+.card__list {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  width: auto;
+  height: auto;
+}
+
+.card__list > img {
+  margin: 5px;
+  flex-wrap: nowrap;
+}
+
+.card__image__name {
+  width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .search__result {
+    display: flex;
+    flex-direction: column;
+  }
+}
