@@ -6,7 +6,7 @@ function SeacrhField() {
   const [image, setImage] = useState("");
   const [result, setResult] = useState([]);
 
-  const accesskey = "hV32rTvyumuVXBlHIJ4SchuzraqM1pjx8oWjab8bIF8";
+  const accesskey = "AEbuzISbvALlvoN-X6Zoj-um36KXKln9Ys_oO5IygvE";
 
   const handleChange = (e) => {
     setImage(e.target.value);
@@ -19,7 +19,7 @@ function SeacrhField() {
       .get(url)
       .then((res) => {
         setResult(res.data.results);
-        console.log(res.data.results);
+        console.log(res);
       })
       .catch((err) => {
         console.error(err);
