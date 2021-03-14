@@ -49,7 +49,10 @@ function SeacrhField() {
           <>
             <div className="card__list">
               <img src={user.profile_image.large} alt="" />
-              <p className="card__image__name">Username: {user.username}</p>
+              {/* <div className="card__image__name">
+                <p className="">Username: {user.username}</p>
+                <p className="">Number of Photos: {user.total_photos}</p>
+              </div> */}
             </div>
           </>
         ))}
