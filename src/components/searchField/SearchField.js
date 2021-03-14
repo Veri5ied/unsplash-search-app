@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./SearchField.css";
+import { Link } from "react-router-dom";
 
-function SeacrhField() {
+function SearchField() {
   const [user, setUser] = useState("");
   const [result, setResult] = useState([]);
 
@@ -46,19 +47,22 @@ function SeacrhField() {
 
       <div className="search__result">
         {result.map((user) => (
-          <>
-            <div className="card__list">
-              <img src={user.profile_image.large} alt="" />
-              {/* <div className="card__image__name">
-                <p className="">Username: {user.username}</p>
-                <p className="">Number of Photos: {user.total_photos}</p>
-              </div> */}
+          <div className="card__list" key={user.id}>
+            <div className="card__body">
+              <img
+                src={user.profile_image.large}
+                alt={user.username}
+                className="card__image"
+              />
+              <p className="card__name">
+                <Link to={`/user/${user.username}`}>@{user.username}</Link>
+              </p>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
   );
 }
 
-export default SeacrhField;
+export default SearchField;
