@@ -14,6 +14,11 @@
   padding: 10px 20px;
 }
 
+.search__result {
+  display: grid;
+  grid-template-columns: minmax(300px);
+}
+
 .search__input > input {
   width: 300px;
   border-radius: 5px;
@@ -58,6 +63,8 @@ button:hover {
 
 .card__image__name {
   width: 200px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 700px) {

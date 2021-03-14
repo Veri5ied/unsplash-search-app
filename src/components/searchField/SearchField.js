@@ -13,7 +13,7 @@ function SeacrhField() {
   };
 
   const handleClick = () => {
-    const url = `https://api.unsplash.com/search/photos?page=1&query=${image}&orientation=squarish&client_id=${accesskey}`;
+    const url = `https://api.unsplash.com/search/photos?page=1&query=${image}&client_id=${accesskey}`;
 
     axios
       .get(url)
