@@ -16,7 +16,8 @@
 
 .search__result {
   display: grid;
-  grid-template-columns: minmax(300px);
+  grid-template-columns: 350px 350px 350px;
+  grid-gap: 10px;
 }
 
 .search__input > input {
