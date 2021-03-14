@@ -12,7 +12,7 @@ function SeacrhField() {
     setImage(e.target.value);
   };
 
-  const handleSubmit = () => {
+  const handleClick = () => {
     const url = `https://api.unsplash.com/search/photos?page=1&query=${image}&orientation=squarish&client_id=${accesskey}`;
 
     axios
@@ -39,7 +39,7 @@ function SeacrhField() {
           className="input__field"
           placeholder="Search for a user"
         />
-        <button onSubmit={handleSubmit} type="submit">
+        <button onClick={handleClick} type="submit">
           Search
         </button>
       </div>
