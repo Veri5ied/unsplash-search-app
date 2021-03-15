@@ -13,6 +13,11 @@
 - React Router Dom (For navigation and rendering other components)
 - react-medium-image-zoom (For zooming images)
 
+# How The App Works
+
+- Search for a user and wait for the app to return users bearing same or almost the same name
+- Click on any user returned to view photos in grids
+- Click on any image to zoom-in or zoom-out
 # Author
 
 [Alvin Uchenna](https://twitter.com/Veri5ied)
