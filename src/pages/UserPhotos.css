@@ -1,0 +1,21 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.user__heading {
+  margin: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__username {
+  text-transform: capitalize;
+}
+
+.user__photos__list {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

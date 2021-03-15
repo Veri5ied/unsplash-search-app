@@ -1,11 +1,14 @@
+import { Switch, Route } from "react-router";
 import "./App.css";
-import SeacrhField from "./components/searchField/SearchField";
+import SearchField from "./components/searchField/SearchField";
+import UserPhotos from "./pages/UserPhotos";
 
 function App() {
   return (
-    <div className="App">
-      <SeacrhField />
-    </div>
+    <Switch>
+      <Route path="/" exact component={SearchField} />
+      <Route path="/user/:username" exact component={UserPhotos} />
+    </Switch>
   );
 }
 
