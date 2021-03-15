@@ -10,6 +10,7 @@
 # Dependencies
 
 - Axios
+- React Router Dom (For navigation and rendering other components)
 
 # Author
 
