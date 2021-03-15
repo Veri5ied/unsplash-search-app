@@ -11,6 +11,7 @@
 
 - Axios
 - React Router Dom (For navigation and rendering other components)
+- react-medium-image-zoom (For zooming images)
 
 # Author
 

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "./UserPhotos.css";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 function UserPhotos() {
   const [userPhotos, setUserPhotos] = useState([]);
@@ -34,11 +36,13 @@ function UserPhotos() {
       <div className="user__photos__list">
         {userPhotos.map((photo) => (
           <div className="user__photo" key={photo.id}>
-            <img
-              src={photo.urls.thumb}
-              alt={photo.alt_description}
-              className="photo"
-            />
+            <Zoom>
+              <img
+                src={photo.urls.thumb}
+                alt={photo.alt_description}
+                className="photo"
+              />
+            </Zoom>
           </div>
         ))}
       </div>
